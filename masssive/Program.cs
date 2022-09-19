@@ -11,9 +11,9 @@ namespace masssive
         static void Main(string[] args)
         {
             var sum = 0;
-            float average = 0; //среднее значение
-            int evenElementArray = 0;
-            int unEveneElementArray = 0;
+            double average = 0; //среднее значение
+            int evenElementArray = 0; // четное значение
+            int unEveneElementArray = 0; // нечетное значение
 
             try
             {
@@ -25,7 +25,7 @@ namespace masssive
 
                 for (int i = 0; i < size; i++)
                 {
-                    Console.Write("Введите значенние массива ");
+                    Console.Write($"Введите {i+1} элемент массива: ");
                     array[i] = Convert.ToInt32(Console.ReadLine());
                 }
 
